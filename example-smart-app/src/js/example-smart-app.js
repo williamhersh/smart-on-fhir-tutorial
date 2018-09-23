@@ -27,7 +27,7 @@
           type: 'Observation',
           query: {
             code: {
-              $or: ['http://loinc.org|26478-8', 'http://loinc.org|2345-7']
+              $or: ['http://loinc.org|26478-8', 'http://loinc.org|2345-7' 'http://loinc.org|2823-3']
             }
           }
         });
@@ -42,6 +42,7 @@
           console.log("byCodes:");
           console.log(byCodes('26478-8'));
           console.log(byCodes('2345-7'));
+          console.log(byCodes('2823-3'));
 
           var gender = patient.gender;
 
